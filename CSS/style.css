@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --PrimaryColor: #ED563B;
+    --BoxShadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    --GreyText: #7a7a7a;
+    --BlackColor: #232d39;
+}
+
+/* REUSABLE CONTENT  */
+span {
+    color: var(--PrimaryColor);
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: var(--PrimaryColor);
+    padding: 12px 18px;
+}
+
+.btn:hover {
+    background-color: #F8735B;
+    color: white;
+}
+
+.top {
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+    margin-bottom: 80px;
+}
+
+.top h2 {
+    color: var(--BlackColor);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.top img {
+    margin: 15px 0;
+}
+
+.top p {
+    color: var(--GreyText);
+    font-size: .9rem;
+    line-height: 1.8;
+}
+
+/* REUSABLE CONTENT  */
+
+/* ================HEADER SECTION START================
+====================================================== */
+header {
+    position: relative;
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.video {
+    min-width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.bg-color {
+    position: absolute;
+    background-color: rgba(35, 45, 57, .8);
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+header .navigation {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.082);
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navigation .logo {
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+header .navigation ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navigation ul li a {
+    color: white;
+}
+
+.navigation ul li a:hover {
+    color: var(--PrimaryColor);
+}
+
+.navigation ul .active {
+    color: var(--PrimaryColor);
+    font-weight: 600;
+}
+
+header .slider {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
+    color: white;
+    width: 90%;
+}
+
+header .slider p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+header .slider h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    margin: 15px 0;
+}
+
+header .slider a {
+    display: inline-block;
+    color: white;
+}
+
+/* ================HEADER SECTION END================
+====================================================== */
+
+/* ================CHOOSE PROGRAM START================
+====================================================== */
+/* .choose-content{
+    display: flex;
+    width: 100%;
+    padding: 0 5%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.choose-content .item{
+    width: 48%;
+    display: flex;
+    margin-bottom: 60px;
+    align-items: center;
+}
+.choose-content .item img{
+    margin-right: 25px;
+}
+.choose-content .item h3{
+    color: var(--BlackColor);
+    font-weight: 600;
+}
+.choose-content .item p{
+    color: var(--GreyText);
+    font-size: .9rem;
+    margin: 5px 0;
+}
+.choose-content .item a{
+    color: var(--PrimaryColor);
+    font-size: .9rem;
+} */
+
+.choose-program {
+    margin-bottom: 150px;
+}
+
+.choose-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 60px;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.choose-content .item {
+    width: 100%;
+    display: flex;
+}
+
+.choose-content .item img {
+    margin-right: 25px;
+}
+
+.choose-content .item h3 {
+    color: var(--BlackColor);
+    font-weight: 600;
+}
+
+.choose-content .item p {
+    color: var(--GreyText);
+    font-size: .9rem;
+    margin: 5px 0;
+}
+
+.choose-content .item a {
+    color: var(--PrimaryColor);
+    font-size: .9rem;
+}
+
+/* ================CHOOSE PROGRAM END================
+====================================================== */
+
+/* ================DONT THINK START ================
+====================================================== */
+.dont-think {
+    position: relative;
+    background-image: url(../images/cta-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 420px;
+    text-align: center;
+    padding: 0 15%;
+    margin-bottom: 150px;
+}
+.dont-think .text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.dont-think .text h3{
+    font-size: 2.5rem;
+}
+.dont-think .text p{
+    font-size: .9rem;
+    font-weight: 300;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+.dont-think .text a{
+    color: white;
+    display: inline-block;
+}
+/* ================DONT THINK END ================
+======================================================*/
+
+/* ================OUR CLASSES START ================
+======================================================*/
+.our-classes{
+    margin-bottom: 150px;
+}
+.classes-content{
+    display: grid;
+    padding: 0 5%;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 60px;
+}
+.classes-content .left{
+    display: grid;
+    row-gap: 30px;
+}
+.classes-content .left a {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    padding: 35px 30px;
+    box-shadow: var(--BoxShadow);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.classes-content .left a h4{
+    font-weight: 600;
+        color: var(--BlackColor);
+}
+.classes-content .left a .active{
+    color: var(--PrimaryColor);
+    font-weight: 600;
+}
+.classes-content .left .schedule-btn {
+    display: inline-block;
+    grid: unset;
+    text-align: center;
+    padding: 18px 30px;
+    color: white;
+    font-weight: 600;
+}
+.classes-content .right img{
+    width: 100%;
+    border-radius: 5px;
+}
+.classes-content .right h5{
+    font-size: 1.5rem;
+    color: var(--BlackColor);
+    margin: 15px 0;
+}
+.classes-content .right p{
+    line-height: 1.8;
+    color: var(--GreyText);
+    font-size: .9rem;
+    font-weight: 300;
+}
+.classes-content .right a{
+    color: white;
+    display: inline-block;
+    margin-top: 25px;
+}
+/* ================OUR CLASSES END ================
+======================================================*/
+/* ================classes-schedule START================
+======================================================*/
+.classes-schedule{
+    background: url(../images/schedule-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    margin-bottom: 150px;
+}
+.classes-schedule .top h2,
+.classes-schedule .top p {
+    color: white;
+}
+.classes-schedule table {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    color: white;
+    border-collapse: collapse;
+}
+.classes-schedule table caption{
+    margin-bottom: 40px;
+}
+.classes-schedule table caption a{
+    color: white;
+    padding: 0 15px;
+}
+.classes-schedule table caption a:hover{
+    color: var(--PrimaryColor);
+}
+.classes-schedule table caption .active{
+    color: var(--PrimaryColor);
+    font-weight: 600;
+}
+.classes-schedule table tr td{
+    border: 1px solid white;
+    height: 100px;
+}
+/* ================classes-schedule END ================
+======================================================*/
+
+/* ================EXPERT TRAINERS START ================
+======================================================*/
+
+/* ================EXPERT TRAINERS END ================
+======================================================*/
+
+
+/* ================CONTACT START ================
+======================================================*/
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact .contact-left img {
+    width: 100%;
+}
+.contact .contact-right{
+    background: url(../images/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.contact .contact-right form{
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 5px;
+    width: 80%;
+}
+.contact .contact-right form .name{
+    width: 45%;
+    height: 45px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.contact .contact-right form .email{
+    width: 45%;
+    height: 45px;
+    border: 1px solid #ddd;
+}
+.contact .contact-right form .subject{
+    width: 95%;
+    height: 45px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.contact .contact-right form .message{
+    width: 95%;
+    height: 120px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    resize: unset;
+}
+.contact .contact-right form .send-btn {
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+.contact .contact-right form .field{
+    background-color: rgba(233, 233, 233, 0.336);
+    padding: 10px 15px;
+    color: var(--GreyText);
+    font-weight: 500;
+}
+::placeholder{
+    color: rgb(177, 177, 177);
+}
+
+.contact .contact-right form .field:focus {
+    outline: none;
+    background: #fff;
+    border: 1px solid #f8735b81;
+}
+/* ================CONTACT END ================
+======================================================*/
